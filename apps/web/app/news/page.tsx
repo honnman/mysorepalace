@@ -14,7 +14,7 @@ export default async function NewsIndex() {
   const stories = await listPublished(100);
   return (
     <>
-      <h1 className="mango font-display text-5xl font-bold text-silk">News</h1>
+      <h1 className="peacock font-display text-5xl font-bold text-silk">News</h1>
       <p className="mt-2 text-ink/70">
         Original summaries of Mysuru heritage news, each reviewed by an editor and linked to its sources.
       </p>

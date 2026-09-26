@@ -65,7 +65,7 @@ export default async function StoryPage({ params }: { params: Params }) {
 
       {story.key_facts?.length > 0 && (
         <section className="mt-8">
-          <h2 className="mango font-display text-xl font-bold text-accent">Key facts</h2>
+          <h2 className="peacock font-display text-xl font-bold text-accent">Key facts</h2>
           <ul className="mt-2 list-disc space-y-1 pl-6 marker:text-gold">
             {story.key_facts.map((f, i) => (
               <li key={i}>{f}</li>

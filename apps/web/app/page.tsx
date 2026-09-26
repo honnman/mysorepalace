@@ -7,7 +7,7 @@ export const revalidate = 600;
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
     <section id={id} className="scroll-mt-8 py-8">
-      <h2 className="mango mb-3 font-display text-3xl font-bold text-accent">{title}</h2>
+      <h2 className="peacock mb-3 font-display text-3xl font-bold text-accent">{title}</h2>
       {children}
     </section>
   );
