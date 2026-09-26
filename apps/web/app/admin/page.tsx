@@ -27,7 +27,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
 
   return (
     <div className="font-sans">
-      <h1 className="text-2xl font-bold">Review queue</h1>
+      <h1 className="font-display text-4xl font-bold text-silk">Review queue</h1>
       <nav className="mt-4 flex gap-4 text-sm">
         {TABS.map((t) => (
           <Link key={t} href={`/admin?status=${t}`} className={t === status ? "font-bold underline" : "text-ink/60"}>
@@ -39,7 +39,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
       {!stories.length && <p className="mt-8 text-ink/60">Nothing {status}.</p>}
 
       {stories.map((s) => (
-        <form key={s.id} action={updateStory} className="mt-8 space-y-3 rounded-lg border border-gold/30 bg-white/70 p-4">
+        <form key={s.id} action={updateStory} className="mt-8 space-y-3 rounded-lg border border-gold/60 bg-white/70 p-4">
           <input type="hidden" name="id" value={s.id} />
           <div className="flex flex-wrap items-center gap-3 text-xs text-ink/60">
             <span>Created {formatDate(s.created_at)}</span>

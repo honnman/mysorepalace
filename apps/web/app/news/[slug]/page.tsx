@@ -45,10 +45,10 @@ export default async function StoryPage({ params }: { params: Params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
-      <p className="text-xs uppercase tracking-wide text-maroon">
+      <p className="text-xs uppercase tracking-widest text-gold-dark">
         {CATEGORY_LABELS[story.category] ?? story.category} · {formatDate(story.published_at)}
       </p>
-      <h1 className="mt-2 text-3xl font-bold leading-tight">{story.headline}</h1>
+      <h1 className="mt-2 font-display text-4xl font-bold leading-tight text-silk sm:text-5xl">{story.headline}</h1>
 
       <div className="mt-6 space-y-4 text-lg leading-relaxed">
         {paragraphs(story.summary_md).map((p, i) => (
@@ -57,16 +57,16 @@ export default async function StoryPage({ params }: { params: Params }) {
       </div>
 
       {story.why_it_matters && (
-        <aside className="mt-8 border-l-4 border-gold bg-white/60 p-4">
-          <h2 className="font-semibold">Why it matters</h2>
+        <aside className="mt-8 border-l-4 border-gold bg-gold-light/20 p-4">
+          <h2 className="font-display text-xl font-bold text-maroon">Why it matters</h2>
           <p className="mt-1">{story.why_it_matters}</p>
         </aside>
       )}
 
       {story.key_facts?.length > 0 && (
         <section className="mt-8">
-          <h2 className="font-semibold">Key facts</h2>
-          <ul className="mt-2 list-disc space-y-1 pl-6">
+          <h2 className="mango font-display text-xl font-bold text-maroon">Key facts</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-6 marker:text-gold">
             {story.key_facts.map((f, i) => (
               <li key={i}>{f}</li>
             ))}
@@ -74,8 +74,8 @@ export default async function StoryPage({ params }: { params: Params }) {
         </section>
       )}
 
-      <footer className="mt-10 border-t border-gold/30 pt-4 text-sm">
-        <h2 className="font-semibold">Sources</h2>
+      <footer className="mt-10 border-t border-gold/50 pt-4 text-sm">
+        <h2 className="font-display text-lg font-bold text-maroon">Sources</h2>
         <p className="mt-1 text-ink/70">This is an original summary. Read the full reporting at:</p>
         <ul className="mt-2 space-y-1">
           {story.source_urls.map((u) => (
