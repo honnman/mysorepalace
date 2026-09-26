@@ -58,14 +58,14 @@ export default async function StoryPage({ params }: { params: Params }) {
 
       {story.why_it_matters && (
         <aside className="mt-8 border-l-4 border-gold bg-gold-light/20 p-4">
-          <h2 className="font-display text-xl font-bold text-maroon">Why it matters</h2>
+          <h2 className="font-display text-xl font-bold text-accent">Why it matters</h2>
           <p className="mt-1">{story.why_it_matters}</p>
         </aside>
       )}
 
       {story.key_facts?.length > 0 && (
         <section className="mt-8">
-          <h2 className="mango font-display text-xl font-bold text-maroon">Key facts</h2>
+          <h2 className="mango font-display text-xl font-bold text-accent">Key facts</h2>
           <ul className="mt-2 list-disc space-y-1 pl-6 marker:text-gold">
             {story.key_facts.map((f, i) => (
               <li key={i}>{f}</li>
@@ -75,7 +75,7 @@ export default async function StoryPage({ params }: { params: Params }) {
       )}
 
       <footer className="mt-10 border-t border-gold/50 pt-4 text-sm">
-        <h2 className="font-display text-lg font-bold text-maroon">Sources</h2>
+        <h2 className="font-display text-lg font-bold text-accent">Sources</h2>
         <p className="mt-1 text-ink/70">This is an original summary. Read the full reporting at:</p>
         <ul className="mt-2 space-y-1">
           {story.source_urls.map((u) => (

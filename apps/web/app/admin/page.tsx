@@ -86,7 +86,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
             <button name="intent" value="save" className="rounded border px-3 py-1">Save</button>
             <button name="intent" value="approve" className="rounded bg-emerald-700 px-3 py-1 text-white">Approve</button>
             <button name="intent" value="reject" className="rounded bg-red-700 px-3 py-1 text-white">Reject</button>
-            <button name="intent" value="publish" className="rounded bg-maroon px-3 py-1 text-white">Publish</button>
+            <button name="intent" value="publish" className="rounded bg-accent px-3 py-1 text-white">Publish</button>
           </div>
         </form>
       ))}

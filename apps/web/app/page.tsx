@@ -7,7 +7,7 @@ export const revalidate = 600;
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
     <section id={id} className="scroll-mt-8 py-8">
-      <h2 className="mango mb-3 font-display text-3xl font-bold text-maroon">{title}</h2>
+      <h2 className="mango mb-3 font-display text-3xl font-bold text-accent">{title}</h2>
       {children}
     </section>
   );
@@ -53,7 +53,7 @@ export default async function Home() {
         ) : (
           <p className="text-ink/60">No stories published yet.</p>
         )}
-        <Link href="/news" className="mt-4 inline-block font-display text-lg font-semibold text-maroon underline">
+        <Link href="/news" className="mt-4 inline-block font-display text-lg font-semibold text-accent underline">
           All news →
         </Link>
       </Section>
