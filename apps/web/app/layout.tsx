@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="pallu px-6 py-8 sm:px-12 sm:py-12">{children}</div>
         </main>
 
-        <div className="zari-border flip" aria-hidden />
+        <div className="zari-border bottom" aria-hidden />
         <footer className="bg-silk-deep/70">
           <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-parchment/80">
             <p>

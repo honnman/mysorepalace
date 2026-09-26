@@ -36,20 +36,21 @@ body {
 }
 
 /*
- * Zari border band: gold ground, fine woven lines, a row of temple teeth
- * (kuppadam) in the body colour, and a line of tiny mango buttas.
+ * Zari border band: gold ground with a woven row of Gandaberunda, the
+ * two-headed bird of Mysore silk borders, between temple (kuppadam) teeth
+ * on the edge that meets the silk. The footer uses a mirrored tile so the
+ * birds stay upright.
  */
 .zari-border {
-  height: 56px;
+  height: 68px;
   background-color: var(--color-gold);
-  background-size: 30px 56px;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='44'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dc8c'/%3E%3Cstop offset='.5' stop-color='%23c9971c'/%3E%3Cstop offset='1' stop-color='%23e9c465'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='24' height='44' fill='url(%23g)'/%3E%3Cpath d='M0 0h24v2H0zM0 40h24v1H0zM0 42.5h24v1.5H0z' fill='%238a6410'/%3E%3Cpath d='M0 2l6 11 6-11 6 11 6-11z' fill='%230a5470'/%3E%3Cpath d='M0 2l6 11 6-11 6 11 6-11' fill='none' stroke='%238a6410' stroke-width='.8'/%3E%3Cpath d='M0 17h24' stroke='%238a6410' stroke-width='.6'/%3E%3Cpath d='M12 22c3 0 4.5 3 3.5 6-.8 2.4-3.5 4-3.5 7-.8-2-3.2-3.4-3.2-6.2 0-4.2 1.8-6.8 3.2-6.8z' fill='%230a5470' fill-opacity='.85'/%3E%3Ccircle cx='0' cy='30' r='1.3' fill='%238a6410'/%3E%3Ccircle cx='24' cy='30' r='1.3' fill='%238a6410'/%3E%3Cpath d='M0 37.5h24' stroke='%238a6410' stroke-width='.6' stroke-dasharray='2 2'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='68'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dc8c'/%3E%3Cstop offset='.5' stop-color='%23d4a52c'/%3E%3Cstop offset='1' stop-color='%23efcc70'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='56' height='68' fill='url(%23g)'/%3E%3Cpath d='M0 0h56v2H0z' fill='%238a6410'/%3E%3Cpath d='M0 2l4 7 4-7l4 7 4-7l4 7 4-7l4 7 4-7l4 7 4-7l4 7 4-7l4 7 4-7z' fill='%230a5470'/%3E%3Cpath d='M0 11.5h56' stroke='%238a6410' stroke-width='.7'/%3E%3Cpath d='M0 64h56M0 66.5h56' stroke='%238a6410' stroke-width='1.2'/%3E%3Cg transform='translate(8.81 13) scale(0.95)'%3E%3Cg fill='%230a5470'%3E%3Cg id='h'%3E %3Cpath d='M20.2 15C17 15 15.5 17 15.5 20l.5 12c.5 3 2 5 4.2 5z'/%3E %3Cpath d='M16 19.5C14.5 15 13 11 11.2 8.6L8.8 10.6c1.8 2.4 3.6 6 5.2 10.9z'/%3E %3Ccircle cx='9.9' cy='8.7' r='2.6'/%3E %3Cpath d='M7.8 7.7C5.8 7.3 4.3 8.2 3.9 10c.8-.6 1.8-.6 2.4 0l1.7.4z'/%3E %3Cpath d='M9.2 6.4C8.7 4.9 9.4 3.8 10.7 3.5c-.4.8 0 1.7.8 2.1zM11 6.3c.2-1.3 1.1-2 2.3-1.9-.6.6-.6 1.4-.2 2.1z'/%3E %3Cpath d='M16 20C12 18.4 6.5 18.4 2.4 21c2 .3 3.3 1 3.9 2-2 .6-3.4 2-3.8 4 1.8-.7 3.6-.6 4.8.2-1.4 1.1-2.2 2.8-2 4.6 1.4-1.4 3.2-2.2 4.8-2.2-.6 1.4-.6 3 0 4.2 1.4-2 3.4-3.2 5.8-3.8z'/%3E %3Cpath d='M17.4 35.6l-1.8 4.6-2.4.7 2 .6-.7 1.8 2-1.4 1.8-3.2z'/%3E %3Cpath d='M19.2 36l-2.6 9 2.4-1.5 1.2 2.5z'/%3E%3C/g%3E %3Cuse href='%23h' transform='translate(40.4 0) scale(-1 1)'/%3E%3C/g%3E %3Cg fill='%23e0b54a'%3E%3Ccircle cx='9.5' cy='8.2' r='.75'/%3E%3Ccircle cx='30.9' cy='8.2' r='.75'/%3E %3Cpath d='M20.2 20.5l1.5 2.8-1.5 2.8-1.5-2.8z'/%3E%3Ccircle cx='20.2' cy='29' r='.9'/%3E%3C/g%3E%3C/g%3E%3Cpath d='M0 33l2.2 3.5L0 40zM56 33l-2.2 3.5 2.2 3.5z' fill='%230a5470'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
+  background-position: center top;
   box-shadow: 0 2px 6px rgb(0 0 0 / 0.35);
 }
-.zari-border.flip {
-  transform: scaleY(-1);
+.zari-border.bottom {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='68'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dc8c'/%3E%3Cstop offset='.5' stop-color='%23d4a52c'/%3E%3Cstop offset='1' stop-color='%23efcc70'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='56' height='68' fill='url(%23g)'/%3E%3Cpath d='M0 66h56v2H0z' fill='%238a6410'/%3E%3Cpath d='M0 66l4 -7 4 7l4 -7 4 7l4 -7 4 7l4 -7 4 7l4 -7 4 7l4 -7 4 7l4 -7 4 7z' fill='%230a5470'/%3E%3Cpath d='M0 56.5h56' stroke='%238a6410' stroke-width='.7'/%3E%3Cpath d='M0 4h56M0 1.5h56' stroke='%238a6410' stroke-width='1.2'/%3E%3Cg transform='translate(8.81 9) scale(0.95)'%3E%3Cg fill='%230a5470'%3E%3Cg id='h'%3E %3Cpath d='M20.2 15C17 15 15.5 17 15.5 20l.5 12c.5 3 2 5 4.2 5z'/%3E %3Cpath d='M16 19.5C14.5 15 13 11 11.2 8.6L8.8 10.6c1.8 2.4 3.6 6 5.2 10.9z'/%3E %3Ccircle cx='9.9' cy='8.7' r='2.6'/%3E %3Cpath d='M7.8 7.7C5.8 7.3 4.3 8.2 3.9 10c.8-.6 1.8-.6 2.4 0l1.7.4z'/%3E %3Cpath d='M9.2 6.4C8.7 4.9 9.4 3.8 10.7 3.5c-.4.8 0 1.7.8 2.1zM11 6.3c.2-1.3 1.1-2 2.3-1.9-.6.6-.6 1.4-.2 2.1z'/%3E %3Cpath d='M16 20C12 18.4 6.5 18.4 2.4 21c2 .3 3.3 1 3.9 2-2 .6-3.4 2-3.8 4 1.8-.7 3.6-.6 4.8.2-1.4 1.1-2.2 2.8-2 4.6 1.4-1.4 3.2-2.2 4.8-2.2-.6 1.4-.6 3 0 4.2 1.4-2 3.4-3.2 5.8-3.8z'/%3E %3Cpath d='M17.4 35.6l-1.8 4.6-2.4.7 2 .6-.7 1.8 2-1.4 1.8-3.2z'/%3E %3Cpath d='M19.2 36l-2.6 9 2.4-1.5 1.2 2.5z'/%3E%3C/g%3E %3Cuse href='%23h' transform='translate(40.4 0) scale(-1 1)'/%3E%3C/g%3E %3Cg fill='%23e0b54a'%3E%3Ccircle cx='9.5' cy='8.2' r='.75'/%3E%3Ccircle cx='30.9' cy='8.2' r='.75'/%3E %3Cpath d='M20.2 20.5l1.5 2.8-1.5 2.8-1.5-2.8z'/%3E%3Ccircle cx='20.2' cy='29' r='.9'/%3E%3C/g%3E%3C/g%3E%3Cpath d='M0 29l2.2 3.5L0 36zM56 29l-2.2 3.5 2.2 3.5z' fill='%230a5470'/%3E%3C/svg%3E");
   box-shadow: 0 -2px 6px rgb(0 0 0 / 0.35);
 }
 
