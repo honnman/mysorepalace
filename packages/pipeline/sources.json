@@ -1,0 +1,13 @@
+[
+  { "name": "Star of Mysore", "url": "https://starofmysore.com/feed/", "type": "rss", "language": "en" },
+  { "name": "The Hindu — Karnataka", "url": "https://www.thehindu.com/news/national/karnataka/feeder/default.rss", "type": "rss", "language": "en" },
+  { "name": "Deccan Herald — Mysuru", "url": "https://news.google.com/rss/search?q=site:deccanherald.com+Mysuru&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" },
+  { "name": "Times of India — Mysuru", "url": "https://news.google.com/rss/search?q=site:timesofindia.indiatimes.com+Mysuru&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" },
+  { "name": "Prajavani — Mysuru", "url": "https://news.google.com/rss/search?q=site:prajavani.net+%E0%B2%AE%E0%B3%88%E0%B2%B8%E0%B3%82%E0%B2%B0%E0%B3%81&hl=kn&gl=IN&ceid=IN:kn", "type": "gnews", "language": "kn" },
+  { "name": "Vijaya Karnataka — Mysuru", "url": "https://news.google.com/rss/search?q=site:vijaykarnataka.com+%E0%B2%AE%E0%B3%88%E0%B2%B8%E0%B3%82%E0%B2%B0%E0%B3%81&hl=kn&gl=IN&ceid=IN:kn", "type": "gnews", "language": "kn" },
+  { "name": "Google News: Mysore Palace", "url": "https://news.google.com/rss/search?q=%22Mysore+Palace%22&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" },
+  { "name": "Google News: Mysuru Dasara", "url": "https://news.google.com/rss/search?q=%22Mysuru+Dasara%22&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" },
+  { "name": "Google News: Wadiyar", "url": "https://news.google.com/rss/search?q=Wadiyar&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" },
+  { "name": "Google News: Yaduveer Wadiyar", "url": "https://news.google.com/rss/search?q=%22Yaduveer+Wadiyar%22&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" },
+  { "name": "Google News: Mysuru heritage", "url": "https://news.google.com/rss/search?q=%22Mysuru+heritage%22&hl=en-IN&gl=IN&ceid=IN:en", "type": "gnews", "language": "en" }
+]

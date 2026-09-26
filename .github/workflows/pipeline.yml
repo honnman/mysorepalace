@@ -1,0 +1,45 @@
+name: News pipeline
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # every 6 hours, off the hour to avoid queue spikes
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: "Also compile the weekly digest"
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-5' }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://mysorepalace.com' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm pipeline:run
+      # Digest: on demand, or on the first scheduled run each Monday (UTC).
+      - name: Weekly digest
+        env:
+          FORCE_DIGEST: ${{ inputs.digest }}
+        run: |
+          if [ "$FORCE_DIGEST" = "true" ] || { [ "$(date -u +%u)" = "1" ] && [ "$(date -u +%H)" -lt 6 ]; }; then
+            pnpm pipeline:digest
+          else
+            echo "Skipping digest"
+          fi

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1f1a14;
+  --color-parchment: #faf6ee;
+  --color-gold: #b8860b;
+  --color-maroon: #7a1f2b;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+body {
+  background: var(--color-parchment);
+  color: var(--color-ink);
+}
