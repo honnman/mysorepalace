@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Review queue", robots: { index: false, follow: false } };
 
 const TABS: StoryStatus[] = ["pending", "approved", "rejected", "published"];
-const input = "w-full rounded border border-ink/20 bg-white p-2 font-sans text-sm";
+const input = "mt-1 w-full rounded border border-ink/20 bg-white p-2 font-sans text-sm font-normal";
 
 export default async function Admin({ searchParams }: { searchParams: Promise<{ status?: string }> }) {
   const requested = (await searchParams).status as StoryStatus | undefined;

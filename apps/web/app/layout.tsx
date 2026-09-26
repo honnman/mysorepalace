@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         <header className="border-b border-gold/30">
           <nav className="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4">
-            <Link href="/" className="mr-auto text-xl font-bold">
+            <Link href="/" className="w-full text-xl font-bold sm:mr-auto sm:w-auto">
               Mysore Palace Guide
             </Link>
             <Link href="/#visit">Visit</Link>
