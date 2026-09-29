@@ -24,7 +24,7 @@ feeds ──► ingest ──► classify ──► cluster ──► summarize 
 
 ## Setup
 
-Requirements: Node 20+, pnpm 10, and a Supabase project.
+Requirements: Node 22+, pnpm 10, and a Supabase project.
 
 ```bash
 pnpm install
